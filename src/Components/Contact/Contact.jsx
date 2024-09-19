@@ -14,7 +14,7 @@ const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", import.meta.env.VITE_API_KEY);
+        formData.append("access_key", "b42d1bd4-11e8-4b90-ad09-830290cbc76e");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -54,7 +54,7 @@ const Contact = () => {
                       allowFullScreen=""
                       loading="lazy"
   referrerPolicy="no-referrer-when-downgrade"
-  src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}
+  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCJIgwRSqwIaPubp9YsOUkxouTcB05XYqg
         &q=28.60140358354632,77.08140472493886
         &zoom=18`}
                   ></iframe>
